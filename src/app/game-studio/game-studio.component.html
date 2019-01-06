@@ -1,0 +1,9 @@
+<div>
+    <div class="gallery">
+        <h1>{{ currentQuestion?.question }}</h1>
+        <ul>
+            <li class="column" *ngFor="let answer of currentQuestion?.answers" (click)="checkAnswer(answer)">
+                {{answer.value}}</li>
+        </ul>
+    </div>
+</div>

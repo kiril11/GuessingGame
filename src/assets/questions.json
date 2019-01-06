@@ -1,0 +1,134 @@
+[
+    {
+        "question": "What is my name?",
+        "difficulty": 1,
+        "answers": [
+            {
+                "value": "Maria",
+                "isCorrect": false
+            },
+            {
+                "value": "Penka",
+                "isCorrect": false
+            },
+            {
+                "value": "Gosho",
+                "isCorrect": false
+            },
+            {
+                "value": "Pesho",
+                "isCorrect": true
+            }
+        ]
+    },
+    {
+        "question": "What is my number?",
+        "difficulty": 1,
+        "answers": [
+            {
+                "value": "1",
+                "isCorrect": false
+            },
+            {
+                "value": "2",
+                "isCorrect": false
+            },
+            {
+                "value": "3",
+                "isCorrect": false
+            },
+            {
+                "value": "4",
+                "isCorrect": true
+            }
+        ]
+    },
+    {
+        "question": "What is my age?",
+        "difficulty": 2,
+        "answers": [
+            {
+                "value": "2",
+                "isCorrect": false
+            },
+            {
+                "value": "1",
+                "isCorrect": false
+            },
+            {
+                "value": "3",
+                "isCorrect": true
+            },
+            {
+                "value": "4",
+                "isCorrect": false
+            }
+        ]
+    },
+    {
+        "question": "What is my home number?",
+        "difficulty": 2,
+        "answers": [
+            {
+                "value": "2",
+                "isCorrect": false
+            },
+            {
+                "value": "1",
+                "isCorrect": false
+            },
+            {
+                "value": "3",
+                "isCorrect": true
+            },
+            {
+                "value": "4",
+                "isCorrect": false
+            }
+        ]
+    },
+    {
+        "question": "What is hard?",
+        "difficulty": 3,
+        "answers": [
+            {
+                "value": "2",
+                "isCorrect": false
+            },
+            {
+                "value": "1",
+                "isCorrect": false
+            },
+            {
+                "value": "3",
+                "isCorrect": true
+            },
+            {
+                "value": "4",
+                "isCorrect": false
+            }
+        ]
+    },
+    {
+        "question": "What is not hard?",
+        "difficulty": 3,
+        "answers": [
+            {
+                "value": "2",
+                "isCorrect": false
+            },
+            {
+                "value": "1",
+                "isCorrect": false
+            },
+            {
+                "value": "3",
+                "isCorrect": true
+            },
+            {
+                "value": "4",
+                "isCorrect": false
+            }
+        ]
+    }
+]
