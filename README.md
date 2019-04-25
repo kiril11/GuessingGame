@@ -2,7 +2,7 @@
 
 This is a person project with the sole purpose of education on Electron and Angular!
 All other information below is provided from the creator of this library!
-Link to the REPO: https://github.com/maximegris/angular-electron
+Link to the official REPO: https://github.com/maximegris/angular-electron
 
 [![Angular Logo](https://www.vectorlogo.zone/logos/angular/angular-icon.svg)](https://angular.io/) [![Electron Logo](https://www.vectorlogo.zone/logos/electronjs/electronjs-icon.svg)](https://electronjs.org/)
 
