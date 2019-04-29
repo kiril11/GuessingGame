@@ -16,19 +16,8 @@ export class LoadQuestionsService {
   }
 
   filterQuestions(difficulty: number, questions: QuestionModel[]): QuestionModel {
-    if (difficulty === 1) {
-      const filteredQuestions = this.groupQuestionsByDifficulty(1, questions);
-      const question = this.selectRandomQuestionAndShuffleAnswers(filteredQuestions);
-      return question;
-    } else if (difficulty === 2) {
-      const filteredQuestions = this.groupQuestionsByDifficulty(2, questions);
-      const question = this.selectRandomQuestionAndShuffleAnswers(filteredQuestions);
-      return question;
-    } else {
-      const filteredQuestions = this.groupQuestionsByDifficulty(3, questions);
-      const question = this.selectRandomQuestionAndShuffleAnswers(filteredQuestions);
-      return question;
-    }
+    const filteredQuestions = this.groupQuestionsByDifficulty(difficulty, questions);
+    return this.selectRandomQuestionAndShuffleAnswers(filteredQuestions);
   }
 
   groupQuestionsByDifficulty(difficulty: number, questions: QuestionModel[]): QuestionModel[] {

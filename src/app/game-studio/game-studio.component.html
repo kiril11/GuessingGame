@@ -1,9 +1,20 @@
-<div>
-    <div class="gallery">
-        <h1>{{ currentQuestion?.question }}</h1>
+<div id="footer">
+
+
+    <div id="main">
+        <h2> {{ currentQuestion?.question }} </h2>
+
         <ul>
-            <li class="column" *ngFor="let answer of currentQuestion?.answers" (click)="checkAnswer(answer)">
+            <li id="{{answer.isCorrect}}" class="shadow" *ngFor="let answer of currentQuestion?.answers"
+                (click)="checkAnswer(answer);setAnimation($event)" (mouseenter)="setHover($event)"
+                (mouseleave)="removeHover($event)">
+
                 {{answer.value}}</li>
+            <!-- <li id = "correct" class = "shadow"><span class = "index">A: </span>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+                <li id = "wrong" class = "shadow"><span class = "index">B: </span>Tempore consequuntur veritatis cumque.</li>
+                <li id = "wrong" class = "shadow"><span class = "index">C: </span>Excepturi exercitationem quidem odio ipsum, nulla eos nihil</li>
+                <li id = "wrong" class = "shadow"><span class = "index">D: </span>dolor et est, enim quod saepe facilis!itae, unde ullam</li>  -->
         </ul>
     </div>
+
 </div>

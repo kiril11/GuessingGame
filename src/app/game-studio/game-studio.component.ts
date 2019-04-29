@@ -11,19 +11,50 @@ export class GameStudioComponent implements OnInit {
 
   currentQuestion: QuestionModel;
   answeredQuestion = 0;
+  answers: HTMLCollection;
   constructor(private loadQuestionService: LoadQuestionsService) { }
 
   ngOnInit() {
     this.getQuestion();
+    this.loadEventListeners();
+  }
+
+  loadEventListeners() {
+    this.answers = document.getElementsByTagName('li');
+
+    for (let i = 0; i < this.answers.length; i++) {
+      this.answers[i].addEventListener('mouseover', this.setHover, false);
+      this.answers[i].addEventListener('mouseout', this.removeHover, false);
+      this.answers[i].addEventListener('click', this.setAnimation, false);
+    }
+  }
+
+  setAnimation(e) {
+    const right = document.getElementById('true');
+    e.target.classList.add('selected');
+    setTimeout(() => {
+      right.classList.remove('hover');
+      right.classList.remove('selected');
+    }, 500);
+
+    right.classList.add('animation');
+  }
+
+  setHover(e) {
+    e.target.classList.toggle('hover');
+  }
+
+  removeHover(e) {
+    e.target.classList.remove('hover');
   }
 
   checkAnswer(answer: { value: string, isCorrect: boolean }) {
     if (answer.isCorrect) {
-      console.log('CORRECT!');
-      this.getQuestion();
-
+      setTimeout(() => {
+        this.getQuestion();
+      }, 1500);
     } else {
-      console.log('WRONG!');
+      // go to home page
     }
   }
 

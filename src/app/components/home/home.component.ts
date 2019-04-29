@@ -18,8 +18,4 @@ export class HomeComponent implements OnInit {
   startGame() {
     this.willStartGame = true;
   }
-
-  addQuestion() {
-    this.willAddQuestion = true;
-  }
 }

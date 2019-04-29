@@ -1,36 +1,95 @@
-.gallery {
-    background-color: #221363;
-    padding-right: 25px;
-    padding-left: 25px;
-    width: 100%;
-    height: 100%;
-    padding-top: 20px;
+#main {
+    width: 85%;
+    // height: 20em;
+    margin: 0 auto;
 }
 
-.gallery h1 {
-    font-size: 30px;
+ul {
+    margin: 0;
+    padding: 0;
+}
+#main h2{
     text-align: center;
-    color: white;
+    border-radius: 2rem;
+    border: 1.5px solid #fff;
+    padding: 10px 25px;
+    background-color: #1F1B54;
+    color: #fff;
 }
 
-.gallery ul {
-    display: flex;
-    flex-flow: row wrap;
-    list-style: none;
-    margin: 32px 0;
+#main li {
+    float: left;
+    width: 40%;
+    margin: 15px;
+    list-style-type: none;
+    border-radius: 2rem;
+    border: 1.5px solid #fff;
+    padding: 17px 25px;
+    background-color: #1F1B54;
+    color: #fff;  
+    transition: 0.2s;
 }
 
-.gallery li {
-    margin: 0 10px;
-    flex-basis: calc(50% - 20px);
-    background-color: #221363; 
-    font-size: 50px;
-    color: white; 
-    text-align: center;
-    cursor: pointer; 
+
+#footer{
+    position: fixed;
+    bottom: 0;
     width: 100%;
 }
 
-.gallery li:hover {
-    background-color: #ff9900;
+// #main li:hover {
+//   background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
+//     color: black;
+//     .index{
+//       font-weight: bold;
+//       color: #fff;
+//   }
+//   }
+
+.shadow{
+    -moz-box-shadow: 5px 5px 5px rgba(68,68,68,0.6);
+	-webkit-box-shadow: 5px 5px 5px rgba(68,68,68,0.6);
+	box-shadow: 5px 5px 5px rgba(68,68,68,0.6);
+}
+
+.index{
+  font-weight: bold;
+    color: #CE8E39;
+}
+
+@keyframes blinking {
+    0%{
+      background-color: #43e97b;
+      border: 1.5px solid #96deda;
+    }
+    100%{
+      background-color: #3cba92;
+      border: 1.5px solid #50c9c3;
+
+    }
+  }
+
+  .animation {    
+     animation: blinking .5s infinite;     
+  }
+
+  #correct{
+    animation-delay: 1s;
+  }
+
+ .hover {
+    background-image: linear-gradient(-60deg, #ff5858 0%, #f08119 100%);
+      .index{
+        font-weight: bold;
+        color: #fff;
+    }
+  }
+
+
+  .selected {
+    background-image: linear-gradient(-60deg, #ff5858 0%, #f08119 100%) !important;      
+      .index{
+        font-weight: bold;
+        color: #fff;
+    }
   }
