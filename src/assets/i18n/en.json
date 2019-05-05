@@ -2,5 +2,6 @@
     "AddQuestion": "Добавяне на въпрос",
     "StartGame": "Започни игра",
     "Question": "Въпрос",
-    "Answer": "Отговор"
+    "Answer": "Отговор",
+    "Difficulty": "Трудност"
 }

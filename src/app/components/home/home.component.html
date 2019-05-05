@@ -2,8 +2,13 @@
   <h1 class="title"></h1>
   <div class="btn-group" *ngIf="!willStartGame && !willAddQuestion">
     <button (click)="startGame()">{{'StartGame' | translate}}</button>
+    <button (click)="addQuestion()">{{'AddQuestion' | translate}}</button>
+
   </div>
   <div *ngIf="willStartGame">
     <app-game-studio></app-game-studio>
+  </div>
+  <div *ngIf="willAddQuestion">
+    <app-add-question></app-add-question>
   </div>
 </div>

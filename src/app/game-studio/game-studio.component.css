@@ -71,12 +71,12 @@ ul {
 
 .animation {
   -webkit-animation: blinking .5s infinite;
-          animation: blinking .5s infinite;
+  animation: blinking .5s infinite;
 }
 
 #correct {
   -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  animation-delay: 1s;
 }
 
 .hover {
@@ -96,4 +96,5 @@ ul {
   font-weight: bold;
   color: #fff;
 }
+
 /*# sourceMappingURL=game-studio.component.css.map */

@@ -1,0 +1,26 @@
+<form #questionForm="ngForm" (ngSubmit)="addQuestion(questionForm)">
+    <label for="Question">{{'Question' | translate}}</label>
+    <input type="text" name="question" id="question" ngModel> <br>
+
+    <label for="Answer1">{{'Answer' | translate}} 1</label>
+    <input type="text" name="answer1" id="answer1" ngModel>
+    <input type="checkbox" name="isCorrect1" value="answer1" ngModel> Верен<br>
+
+    <label for="Answer2">{{'Answer' | translate}} 2</label>
+    <input type="text" name="answer2" id="answer2" ngModel>
+    <input type="checkbox" name="isCorrect2" value="answer2" ngModel> Верен<br>
+
+    <label for="Answer3">{{'Answer' | translate}} 3</label>
+    <input type="text" name="answer3" id="answer3" ngModel>
+    <input type="checkbox" name="isCorrect3" value="answer3" ngModel> Верен<br>
+
+    <label for="Answer4">{{'Answer' | translate}} 4</label>
+    <input type="text" name="answer4" id="answer4" ngModel>
+    <input type="checkbox" name="isCorrect4" value="answer4" ngModel> Верен<br>
+
+    <label for="Answer4">{{'Difficulty' | translate}} от 1 до 3</label>
+    <input type="text" name="difficulty" id="difficulty" maxlength="1"
+        oninput="this.value=this.value.replace(/[^1-3]/g,'');" ngModel><br>
+
+    <button type="submit">{{'AddQuestion' | translate}}</button>
+</form>

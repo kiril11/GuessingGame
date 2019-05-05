@@ -1,132 +1,792 @@
 [
     {
-        "question": "What is my name?",
+        "question": "Кой е авторът на 'Аз съм българче'?",
         "difficulty": 1,
         "answers": [
             {
-                "value": "Maria",
-                "isCorrect": false
-            },
-            {
-                "value": "Penka",
-                "isCorrect": false
-            },
-            {
-                "value": "Gosho",
-                "isCorrect": false
-            },
-            {
-                "value": "Pesho",
+                "value": "Иван Вазов",
                 "isCorrect": true
+            },
+            {
+                "value": "Димчо Дебелянов",
+                "isCorrect": false
+            },
+            {
+                "value": "Христо Ботев",
+                "isCorrect": false
+            },
+            {
+                "value": "Алеко Константинов",
+                "isCorrect": false
             }
         ]
     },
     {
-        "question": "What is my number?",
+        "question": "Какво казваме, че правим с ден, в който се отказваме да работим?",
         "difficulty": 1,
         "answers": [
             {
-                "value": "1",
-                "isCorrect": false
-            },
-            {
-                "value": "2",
-                "isCorrect": false
-            },
-            {
-                "value": "3",
-                "isCorrect": false
-            },
-            {
-                "value": "4",
+                "value": "Пишем го дъждовен",
                 "isCorrect": true
+            },
+            {
+                "value": "Слагаме го на масата",
+                "isCorrect": false
+            },
+            {
+                "value": "Бием го с лопатата",
+                "isCorrect": false
+            },
+            {
+                "value": "Хвърляме го под влака",
+                "isCorrect": false
             }
         ]
     },
     {
-        "question": "What is my age?",
+        "question": "Основни съставки на коя напитка са малц, хмел, дрожди и вода?",
+        "difficulty": 1,
+        "answers": [
+            {
+                "value": "бира",
+                "isCorrect": true
+            },
+            {
+                "value": "уиски",
+                "isCorrect": false
+            },
+            {
+                "value": "боза",
+                "isCorrect": false
+            },
+            {
+                "value": "лимонада",
+                "isCorrect": false
+            }
+        ]
+    },
+    {
+        "question": "Кои НЕ са братя?",
+        "difficulty": 1,
+        "answers": [
+            {
+                "value": "Дони и Момчил",
+                "isCorrect": true
+            },
+            {
+                "value": "Ромул и Рем",
+                "isCorrect": false
+            },
+            {
+                "value": "Каин и Авел",
+                "isCorrect": false
+            },
+            {
+                "value": "Братя Аргирови",
+                "isCorrect": false
+            }
+        ]
+    },
+    {
+        "question": "Кой кара хората да се събличат в работното си време без това да повдига морални въпроси?",
+        "difficulty": 1,
+        "answers": [
+            {
+                "value": "лекарят",
+                "isCorrect": true
+            },
+            {
+                "value": "банкерът",
+                "isCorrect": false
+            },
+            {
+                "value": "стюардесата",
+                "isCorrect": false
+            },
+            {
+                "value": "водопроводчикът",
+                "isCorrect": false
+            }
+        ]
+    },
+    {
+        "question": "На какъв матрка трябва да се спи според лекарските препоръки?",
+        "difficulty": 1,
+        "answers": [
+            {
+                "value": "На ортопедичен",
+                "isCorrect": true
+            },
+            {
+                "value": "На хирургичен",
+                "isCorrect": false
+            },
+            {
+                "value": "На логопедичен",
+                "isCorrect": false
+            },
+            {
+                "value": "На стоматологичен",
+                "isCorrect": false
+            }
+        ]
+    },
+    {
+        "question": "Кое от следните се прави на скара?",
+        "difficulty": 1,
+        "answers": [
+            {
+                "value": "Цър-пър",
+                "isCorrect": true
+            },
+            {
+                "value": "Зиг-заг",
+                "isCorrect": false
+            },
+            {
+                "value": "Танци-манци",
+                "isCorrect": false
+            },
+            {
+                "value": "Тинтири-минтири",
+                "isCorrect": false
+            }
+        ]
+    },
+    {
+        "question": "Кое от изброените НЕ е агрегатно състояние на водата?",
+        "difficulty": 1,
+        "answers": [
+            {
+                "value": "гелообразно",
+                "isCorrect": true
+            },
+            {
+                "value": "твърдо",
+                "isCorrect": false
+            },
+            {
+                "value": "течно",
+                "isCorrect": false
+            },
+            {
+                "value": "газообразно",
+                "isCorrect": false
+            }
+        ]
+    },
+    {
+        "question": "Кое от изброените е марка автомобили?",
+        "difficulty": 1,
+        "answers": [
+            {
+                "value": "Skoda",
+                "isCorrect": true
+            },
+            {
+                "value": "Michelin",
+                "isCorrect": false
+            },
+            {
+                "value": "Bridgestone",
+                "isCorrect": false
+            },
+            {
+                "value": "Falken Tire",
+                "isCorrect": false
+            }
+        ]
+    },
+    {
+        "question": "Довършете поговорката: Да би мирно седяло, .........",
+        "difficulty": 1,
+        "answers": [
+            {
+                "value": "не би чудо видяло",
+                "isCorrect": true
+            },
+            {
+                "value": "не би бесняло",
+                "isCorrect": false
+            },
+            {
+                "value": "не би се вайкало",
+                "isCorrect": false
+            },
+            {
+                "value": "не би се видяло",
+                "isCorrect": false
+            }
+        ]
+    },
+    {
+        "question": "Кой е най - високият връх на света?",
+        "difficulty": 1,
+        "answers": [
+            {
+                "value": "Еверест",
+                "isCorrect": true
+            },
+            {
+                "value": "К2",
+                "isCorrect": false
+            },
+            {
+                "value": "Серо Торе",
+                "isCorrect": false
+            },
+            {
+                "value": "Фитц Рой",
+                "isCorrect": false
+            }
+        ]
+    },
+    {
+        "question": "От коя година в България се отглежда тютюн?",
         "difficulty": 2,
         "answers": [
             {
-                "value": "2",
-                "isCorrect": false
-            },
-            {
-                "value": "1",
-                "isCorrect": false
-            },
-            {
-                "value": "3",
+                "value": "1717",
                 "isCorrect": true
             },
             {
-                "value": "4",
+                "value": "1903",
+                "isCorrect": false
+            },
+            {
+                "value": "1854",
+                "isCorrect": false
+            },
+            {
+                "value": "1943",
                 "isCorrect": false
             }
         ]
     },
     {
-        "question": "What is my home number?",
+        "question": "Как е предишното име на връх Мусала?",
         "difficulty": 2,
         "answers": [
             {
-                "value": "2",
-                "isCorrect": false
-            },
-            {
-                "value": "1",
-                "isCorrect": false
-            },
-            {
-                "value": "3",
+                "value": "Сталин",
                 "isCorrect": true
             },
             {
-                "value": "4",
+                "value": "Възраждане",
+                "isCorrect": false
+            },
+            {
+                "value": "Радецки",
+                "isCorrect": false
+            },
+            {
+                "value": "Скала",
                 "isCorrect": false
             }
         ]
     },
     {
-        "question": "What is hard?",
-        "difficulty": 3,
+        "question": "В коя държава се е провело първото издание на футболния турнир 'Копа Америка'?",
+        "difficulty": 2,
         "answers": [
             {
-                "value": "2",
-                "isCorrect": false
-            },
-            {
-                "value": "1",
-                "isCorrect": false
-            },
-            {
-                "value": "3",
+                "value": "Аржентина",
                 "isCorrect": true
             },
             {
-                "value": "4",
+                "value": "Бразилия",
+                "isCorrect": false
+            },
+            {
+                "value": "Уругвай",
+                "isCorrect": false
+            },
+            {
+                "value": "Парагвай",
                 "isCorrect": false
             }
         ]
     },
     {
-        "question": "What is not hard?",
-        "difficulty": 3,
+        "question": "За да всее чувство на страх, с какъв звук започва песента на Майкъл Джексън: 'Трилър'?",
+        "difficulty": 2,
         "answers": [
+            {
+                "value": "скърцаща врата",
+                "isCorrect": true
+            },
+            {
+                "value": "виещ вълк",
+                "isCorrect": false
+            },
+            {
+                "value": "шумене на листа",
+                "isCorrect": false
+            },
+            {
+                "value": "счупване на стъкло",
+                "isCorrect": false
+            }
+        ]
+    },
+    {
+        "question": "Какъв цвят са двете букив 'G' на началната страница на 'google.com'?",
+        "difficulty": 2,
+        "answers": [
+            {
+                "value": "син",
+                "isCorrect": true
+            },
+            {
+                "value": "зелен",
+                "isCorrect": false
+            },
+            {
+                "value": "червен",
+                "isCorrect": false
+            },
+            {
+                "value": "жълт",
+                "isCorrect": false
+            }
+        ]
+    },
+    {
+        "question": "Кой от изброените поети е бил наричан 'Пърси'?",
+        "difficulty": 2,
+        "answers": [
+            {
+                "value": "Шели",
+                "isCorrect": true
+            },
+            {
+                "value": "Байрон",
+                "isCorrect": false
+            },
+            {
+                "value": "Хайне",
+                "isCorrect": false
+            },
+            {
+                "value": "",
+                "isCorrect": false
+            }
+        ]
+    },
+    {
+        "question": "Колко години е съществувала държавата Велика Колумбия?",
+        "difficulty": 2,
+        "answers": [
+            {
+                "value": "12",
+                "isCorrect": true
+            },
             {
                 "value": "2",
                 "isCorrect": false
             },
             {
-                "value": "1",
+                "value": "190",
                 "isCorrect": false
             },
             {
-                "value": "3",
+                "value": "25",
+                "isCorrect": false
+            }
+        ]
+    },
+    {
+        "question": "Кой от изброените народи НЕ спада към славянската езикова група?",
+        "difficulty": 2,
+        "answers": [
+            {
+                "value": "румънци",
                 "isCorrect": true
             },
             {
-                "value": "4",
+                "value": "българи",
+                "isCorrect": false
+            },
+            {
+                "value": "македонци",
+                "isCorrect": false
+            },
+            {
+                "value": "сърби",
+                "isCorrect": false
+            }
+        ]
+    },
+    {
+        "question": "Ария от коя руска опера изпълнява норвежката певица Sissel в съвместен хит с рапъра Warren G от 1998г.?",
+        "difficulty": 2,
+        "answers": [
+            {
+                "value": "Княз Игор",
+                "isCorrect": true
+            },
+            {
+                "value": "Борис Годунов",
+                "isCorrect": false
+            },
+            {
+                "value": "Война и мир",
+                "isCorrect": false
+            },
+            {
+                "value": "Дама пика",
+                "isCorrect": false
+            }
+        ]
+    },
+    {
+        "question": "Кой от изброените елементи се среща най-честно на Земята (в атомни %)?",
+        "difficulty": 2,
+        "answers": [
+            {
+                "value": "кислород",
+                "isCorrect": true
+            },
+            {
+                "value": "сяра",
+                "isCorrect": false
+            },
+            {
+                "value": "силиций",
+                "isCorrect": false
+            },
+            {
+                "value": "магнезий",
+                "isCorrect": false
+            }
+        ]
+    },
+    {
+        "question": "Кой спортист е избиран рекордните 4 пъти за Спортист на годината на България?",
+        "difficulty": 2,
+        "answers": [
+            {
+                "value": "Стефка Костадинова",
+                "isCorrect": true
+            },
+            {
+                "value": "Боян Радев",
+                "isCorrect": false
+            },
+            {
+                "value": "Мария Гроздева",
+                "isCorrect": false
+            },
+            {
+                "value": "Христо Марков",
+                "isCorrect": false
+            }
+        ]
+    },
+    {
+        "question": "През коя година щангистът Гълъбин Боевски става олимпийски шампион?",
+        "difficulty": 2,
+        "answers": [
+            {
+                "value": "2000",
+                "isCorrect": true
+            },
+            {
+                "value": "1999",
+                "isCorrect": false
+            },
+            {
+                "value": "2003",
+                "isCorrect": false
+            },
+            {
+                "value": "2002",
+                "isCorrect": false
+            }
+        ]
+    },
+    {
+        "question": "С коя държава се свързва превратът, наречен 'Революция на карамфилите' (1974г.)?",
+        "difficulty": 2,
+        "answers": [
+            {
+                "value": "Португалия",
+                "isCorrect": true
+            },
+            {
+                "value": "Франция",
+                "isCorrect": false
+            },
+            {
+                "value": "Иран",
+                "isCorrect": false
+            },
+            {
+                "value": "Великобритания",
+                "isCorrect": false
+            }
+        ]
+    },
+    {
+        "question": "Рождената дата на кой представител на 'златния век' на руската литература е избрана за Ден на руския език?",
+        "difficulty": 2,
+        "answers": [
+            {
+                "value": "Пушкин",
+                "isCorrect": true
+            },
+            {
+                "value": "Толстой",
+                "isCorrect": false
+            },
+            {
+                "value": "Гогол",
+                "isCorrect": false
+            },
+            {
+                "value": "Лермонтов",
+                "isCorrect": false
+            }
+        ]
+    },
+    {
+        "question": "Коя сграда е превърната в болница по време на Сръбско-българската война?",
+        "difficulty": 2,
+        "answers": [
+            {
+                "value": "Народното събрание",
+                "isCorrect": true
+            },
+            {
+                "value": "Централните хали",
+                "isCorrect": false
+            },
+            {
+                "value": "Централната баня",
+                "isCorrect": false
+            },
+            {
+                "value": "Народната библиотека",
+                "isCorrect": false
+            }
+        ]
+    },
+    {
+        "question": "Кое твърдение се отнася за живелия през XVIII век руски селянин Фьодор Василиев?",
+        "difficulty": 2,
+        "answers": [
+            {
+                "value": "Има 87 деца",
+                "isCorrect": true
+            },
+            {
+                "value": "Създава 11 университета",
+                "isCorrect": false
+            },
+            {
+                "value": "Владее 25 езика",
+                "isCorrect": false
+            },
+            {
+                "value": "Води на паша 1000 овце",
+                "isCorrect": false
+            }
+        ]
+    },
+    {
+        "question": "За 'едрите звезди' над кой град пише Никола Вапцаров в стихотворението си 'Писмо'?",
+        "difficulty": 2,
+        "answers": [
+            {
+                "value": "Фамагуста",
+                "isCorrect": true
+            },
+            {
+                "value": "Измир",
+                "isCorrect": false
+            },
+            {
+                "value": "Ротердам",
+                "isCorrect": false
+            },
+            {
+                "value": "Манила",
+                "isCorrect": false
+            }
+        ]
+    },
+    {
+        "question": "В началото на XX век се ражда негативният израз 'Ново 20'. Кой процел е предизвикал появата му?",
+        "difficulty": 2,
+        "answers": [
+            {
+                "value": "Инфлация",
+                "isCorrect": true
+            },
+            {
+                "value": "Ликвидация",
+                "isCorrect": false
+            },
+            {
+                "value": "Монополизиране",
+                "isCorrect": false
+            },
+            {
+                "value": "Национализация",
+                "isCorrect": false
+            }
+        ]
+    },
+    {
+        "question": "Мароканската стена в Западна Сахара е дълга около 2700 км и се охранява денонощно. Тя е известна като:",
+        "difficulty": 2,
+        "answers": [
+            {
+                "value": "Най-дългото минно поле",
+                "isCorrect": true
+            },
+            {
+                "value": "Най-скъпото съоръжение",
+                "isCorrect": false
+            },
+            {
+                "value": "Най-древната стена",
+                "isCorrect": false
+            },
+            {
+                "value": "Най-голямото водохранилище",
+                "isCorrect": false
+            }
+        ]
+    },
+    {
+        "question": "Коя научна мерна единица е наименована на италиански благородник?",
+        "difficulty": 3,
+        "answers": [
+            {
+                "value": "Волт",
+                "isCorrect": true
+            },
+            {
+                "value": "Херц",
+                "isCorrect": false
+            },
+            {
+                "value": "Паскал",
+                "isCorrect": false
+            },
+            {
+                "value": "Ом",
+                "isCorrect": false
+            }
+        ]
+    },
+    {
+        "question": "Кой е патрона на Испания?",
+        "difficulty": 3,
+        "answers": [
+            {
+                "value": "Свети Джеймс",
+                "isCorrect": true
+            },
+            {
+                "value": "Свети Джон",
+                "isCorrect": false
+            },
+            {
+                "value": "Свети Петър",
+                "isCorrect": false
+            },
+            {
+                "value": "Свети Бенедик",
+                "isCorrect": false
+            }
+        ]
+    },
+    {
+        "question": "Кой архитект е проектирал стъклената пирамида в двора на Лувъра?",
+        "difficulty": 3,
+        "answers": [
+            {
+                "value": "Яу Мин Пей",
+                "isCorrect": true
+            },
+            {
+                "value": "Филип Джонсон",
+                "isCorrect": false
+            },
+            {
+                "value": "Льо Корбюзие",
+                "isCorrect": false
+            },
+            {
+                "value": "Франк Гери",
+                "isCorrect": false
+            }
+        ]
+    },
+    {
+        "question": "Кой е произвел първата ефективна ваксина срещу полиомиелит?",
+        "difficulty": 3,
+        "answers": [
+            {
+                "value": "Джонас Салк",
+                "isCorrect": true
+            },
+            {
+                "value": "Нилс Бор",
+                "isCorrect": false
+            },
+            {
+                "value": "Албърт Сабин",
+                "isCorrect": false
+            },
+            {
+                "value": "Луи Пастер",
+                "isCorrect": false
+            }
+        ]
+    },
+    {
+        "question": "Коя от релийте НЕ е монотеистична?",
+        "difficulty": 3,
+        "answers": [
+            {
+                "value": "Яу Мин Пей",
+                "isCorrect": true
+            },
+            {
+                "value": "Филип Джонсон",
+                "isCorrect": false
+            },
+            {
+                "value": "Льо Корбюзие",
+                "isCorrect": false
+            },
+            {
+                "value": "Франк Гери",
+                "isCorrect": false
+            }
+        ]
+    },
+    {
+        "question": "Въпреки че се е смятало, че ще излекува настинката на Моцарт, кой химически елемент със символ Sb се предполага да го е отровило?",
+        "difficulty": 3,
+        "answers": [
+            {
+                "value": "Антимон",
+                "isCorrect": true
+            },
+            {
+                "value": "Флеровий",
+                "isCorrect": false
+            },
+            {
+                "value": "Дубний",
+                "isCorrect": false
+            },
+            {
+                "value": "Ксенон",
                 "isCorrect": false
             }
         ]

@@ -1,8 +1,10 @@
+
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { QuestionModel } from '../models/QuestionModel';
-import { AnswerModel } from '../models/AnswerModel';
+const fs = require('fs');
+const path = require('path');
 
 @Injectable({
   providedIn: 'root'
@@ -23,7 +25,7 @@ export class LoadQuestionsService {
   groupQuestionsByDifficulty(difficulty: number, questions: QuestionModel[]): QuestionModel[] {
     const filteredQuestions: QuestionModel[] = [];
     questions.forEach((q: QuestionModel) => {
-      if (q.difficulty === difficulty) {
+      if (Number(q.difficulty) === difficulty) {
         filteredQuestions.push(q);
       }
     });
@@ -38,5 +40,19 @@ export class LoadQuestionsService {
         [randomQuestion.answers[j], randomQuestion.answers[i]];
     }
     return randomQuestion;
+  }
+
+  /*  Function reloads app because it activates the 'electron-reload' in main.ts as it changes file in the app*/
+  createQuestion(question: any) {
+    fs.readFile(path.resolve('src/assets/questions.json'), 'utf-8', function (err, data) {
+      if (err) { throw err; }
+      const questionList = JSON.parse(data);
+      questionList.push(question);
+
+      fs.writeFileSync(path.normalize('src/assets/questions.json'), JSON.stringify(questionList), 'utf8',
+        function (error) {
+          if (error) { throw error; }
+        });
+    });
   }
 }
