@@ -12,6 +12,7 @@ export class GameStudioComponent implements OnInit {
   currentQuestion: QuestionModel;
   answeredQuestion = 0;
   answers: HTMLCollection;
+  called = false;
   constructor(private loadQuestionService: LoadQuestionsService) { }
 
   ngOnInit() {
@@ -20,10 +21,12 @@ export class GameStudioComponent implements OnInit {
   }
 
   loadEventListeners() {
-    this.answers = document.getElementsByTagName('li');
+    this.answers = document.getElementsByClassName('available2click');
 
     for (let i = 0; i < this.answers.length; i++) {
-      this.answers[i].addEventListener('mouseover', this.setHover, false);
+
+        this.answers[i].addEventListener('mouseover', this.setHover, true);
+
       this.answers[i].addEventListener('mouseout', this.removeHover, false);
       this.answers[i].addEventListener('click', this.setAnimation, false);
     }
@@ -38,6 +41,7 @@ export class GameStudioComponent implements OnInit {
     }, 500);
 
     right.classList.add('animation');
+    this.called = true;
   }
 
   setHover(e) {
@@ -56,6 +60,10 @@ export class GameStudioComponent implements OnInit {
     } else {
       // go to home page
     }
+  }
+
+  testF(e) {
+    console.log('runa functions');
   }
 
   getQuestion() {

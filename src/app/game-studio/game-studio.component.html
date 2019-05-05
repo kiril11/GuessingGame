@@ -2,7 +2,7 @@
     <div id="main">
         <h2> {{ currentQuestion?.question }} </h2>
         <ul>
-            <li id="{{answer.isCorrect}}" class="shadow" *ngFor="let answer of currentQuestion?.answers"
+            <li id="{{answer.isCorrect}}" class="shadow available2click" *ngFor="let answer of currentQuestion?.answers"
                 (click)="checkAnswer(answer);setAnimation($event)" (mouseenter)="setHover($event)"
                 (mouseleave)="removeHover($event)">
                 {{answer.value | titlecase }}</li>

@@ -5,4 +5,11 @@ html, body {
   font-family: 'Montserrat', sans-serif;
   background-image: linear-gradient(-225deg, #1F1B54 0%, #6E9CD2 51%, #8CD4DC 100%);
 }
+
+#logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 28%;
+}
 /*# sourceMappingURL=styles.css.map */
