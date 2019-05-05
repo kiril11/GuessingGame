@@ -21,6 +21,7 @@ import { HomeComponent } from './components/home/home.component';
 import { GameStudioComponent } from './game-studio/game-studio.component';
 import { AddQuestionComponent } from './add-question/add-question.component';
 import { LoadQuestionsService } from './providers/load-questions.service';
+import { PlayAudioService } from './providers/play-audio.service';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -48,7 +49,7 @@ export function HttpLoaderFactory(http: HttpClient) {
       }
     })
   ],
-  providers: [ElectronService, LoadQuestionsService],
+  providers: [ElectronService, LoadQuestionsService, PlayAudioService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

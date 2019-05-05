@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { LoadQuestionsService } from '../providers/load-questions.service';
 import { QuestionModel } from '../models/QuestionModel';
+import { PlayAudioService } from '../providers/play-audio.service';
 
 @Component({
   selector: 'app-game-studio',
@@ -13,11 +14,16 @@ export class GameStudioComponent implements OnInit {
   answeredQuestion = 0;
   answers: HTMLCollection;
   called = false;
-  constructor(private loadQuestionService: LoadQuestionsService) { }
+  difficulty = 0;
+
+  constructor(
+    private loadQuestionService: LoadQuestionsService,
+    private playAudioService: PlayAudioService) { }
 
   ngOnInit() {
     this.getQuestion();
     this.loadEventListeners();
+    this.playAudioService.playInitialAudio();
   }
 
   loadEventListeners() {
@@ -25,8 +31,7 @@ export class GameStudioComponent implements OnInit {
 
     for (let i = 0; i < this.answers.length; i++) {
 
-        this.answers[i].addEventListener('mouseover', this.setHover, true);
-
+      this.answers[i].addEventListener('mouseover', this.setHover, true);
       this.answers[i].addEventListener('mouseout', this.removeHover, false);
       this.answers[i].addEventListener('click', this.setAnimation, false);
     }
@@ -34,11 +39,15 @@ export class GameStudioComponent implements OnInit {
 
   setAnimation(e) {
     const right = document.getElementById('true');
+    let interval = 500;
     e.target.classList.add('selected');
+    if (this.answeredQuestion === 15) {
+      interval = 4000;
+    }
     setTimeout(() => {
       right.classList.remove('hover');
       right.classList.remove('selected');
-    }, 500);
+    }, interval);
 
     right.classList.add('animation');
     this.called = true;
@@ -53,11 +62,15 @@ export class GameStudioComponent implements OnInit {
   }
 
   checkAnswer(answer: { value: string, isCorrect: boolean }) {
-    if (answer.isCorrect) {
+    if (answer.isCorrect && this.answeredQuestion !== 15) {
+      this.playAudioService.playCorrectTheme();
       setTimeout(() => {
         this.getQuestion();
-      }, 1500);
+      }, 3600);
+    } else if (this.answeredQuestion === 15) {
+      this.playAudioService.playFinalTheme(answer.isCorrect);
     } else {
+      this.playAudioService.playWrongTheme();
       // go to home page
     }
   }
@@ -67,16 +80,15 @@ export class GameStudioComponent implements OnInit {
   }
 
   getQuestion() {
-    let difficulty: number;
     if (this.answeredQuestion <= 5) {
-      difficulty = 1;
+      this.difficulty = 1;
     } else if (this.answeredQuestion <= 10) {
-      difficulty = 2;
+      this.difficulty = 2;
     } else {
-      difficulty = 3;
+      this.difficulty = 3;
     }
-    this.loadQuestionService.loadQuestion(difficulty).subscribe(data => {
-      this.currentQuestion = this.loadQuestionService.filterQuestions(difficulty, data);
+    this.loadQuestionService.loadQuestion(this.difficulty).subscribe(data => {
+      this.currentQuestion = this.loadQuestionService.filterQuestions(this.difficulty, data);
       this.answeredQuestion++;
     });
   }
